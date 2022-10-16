@@ -1,3 +1,4 @@
 set-executionpolicy remote-signed or set-executionpolicy unrestricted
 navigate to the file dir of the user's desktop
+eg. cd /users/username/desktop
 ./script.ps1
