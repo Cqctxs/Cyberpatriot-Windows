@@ -25,7 +25,7 @@ if ($option -eq 1) {
     Write-Warning "getting Documents"
     Get-ChildItem -Path "C:\Users\$user\Documents\*" -Include *.jpg,*.png,*.aac,*.ac3,*.avi,*.aiff,*.bat,*.bmp,*.exe,*.flac,*.gif,*.jpeg,*.mov,*.m3u,*.m4p,*.mp2,*.mp3,*.mp4,*.mpeg4,*.midi,*.msi,*.ogg,*.png,*.txt,*.sh,*.wav,*.wma,*.vqf,*.pcap,*.zip,*.pdf,*.json -Recurse | Copy-Item -Destination C:\Users\$user\Desktop\files\documentsandsettings
     Write-Warning "getting media files"
-    Get-ChildItem -Path C:\Users -Include .jpg,.png,.jpeg,.avi,.mp4,.mp3,*.wav -Exclude .dll,.doc,*.docx,  -File -Recurse -ErrorAction SilentlyContinue | Out-File -filepath C:\Users\$user\Desktop\scripterino\Mediafiles.txt
+    Get-ChildItem -Path C:\Users -Include .jpg,.png,.jpeg,.avi,.mp4,.mp3,*.wav -Exclude .dll,.doc,*.docx,  -File -Recurse -ErrorAction SilentlyContinue | Out-File -filepath C:\Users\$user\Desktop\files\Mediafiles.txt
 
     #setup
     [console]::Beep(800,500)
